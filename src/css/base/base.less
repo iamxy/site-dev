@@ -1,77 +1,71 @@
-
-
-html{
+html {
   font-size: 100px;
 }
 
-
-body{
-  font-family: Lato, Helvetica,STHeiti,Droid Sans Fallback;
+body {
+  font-family: Lato;
+  font-weight: 200;
   background: #0c0c0c;
 }
 
-
-
 a {outline: 0;}
 
-a:focus { outline:0; text-decoration: none}
+a:focus {outline:0; text-decoration: none}
 
-
-i{
+i {
   font-style: normal;
 }
-.v{
+
+.v {
   vertical-align: middle;
 }
-.align_right{
-  text-align: right;
-}
-.align_left{
-  text-align: left;
-}
-.t_right{
+
+.align_right {
   text-align: right;
 }
 
-a:hover{
+.align_left {
+  text-align: left;
+}
+
+.t_right {
+  text-align: right;
+}
+
+a:hover {
   color: #44c0ff;
   text-decoration: none;
 }
 
-
-
-
 .git_btn,
-.container.draw_fixed h1,
 .ping_list h3,
 #header .hidden-xs .navbar-nav > li > a
-
 {
-  font-family: "titillium_webbold";
+  font-family: TitilliumWeb;
+  font-weight: bold;
 }
 
-.ping_list h3,.ping_illustrations h2{
-  font-family: Lato,Helvetica,STHeiti,Droid Sans Fallback;
+.ping_list h3, .ping_illustrations h2{
+  font-family: Lato;
 }
 
 #header .hidden-xs .navbar-nav > li.active > a{
-  font-family: titillium_webbold;
+  font-family: TitilliumWeb;
+  font-weight: bold;
 }
 
 #header{
-
   background: #090916;
   height: 0.8rem;
   z-index: 10000;
 }
 
-
 #header .navbar-brand{
   height: auto;
   padding: 0;
   padding-top: 0.21rem;
-
 }
+
 .language_tab{
   padding-top: 0.24rem;
   text-align: right;
@@ -79,13 +73,16 @@ a:hover{
   font-family: '黑体';
   font-size: 0.22rem;
 }
+
 .language_tab a{
   color: #fff;
-  font-family: titillium_webregular;
+  font-family: TitilliumWeb;
 }
+
 .language_tab a.active{
   color: #3A59F0;
 }
+
 .navbar-brand a.logo img{
   width: 0.41rem;
   height: 0.43rem;
@@ -98,11 +95,9 @@ a:hover{
   padding: 0px 0.3rem 0;
   line-height: 0.8rem;
   position: relative;
-
-
 }
 
-#header .hidden-xs .navbar-nav.nav_open > li > a{
+#header .hidden-xs .navbar-nav .nav_open > li > a{
   padding: 0 0.21rem;
 }
 
@@ -110,13 +105,14 @@ a:hover{
   background: none;
 }
 
-
 #header .hidden-xs .navbar-nav > li > a:hover{
   background: no-repeat;
   color: #44c0ff;
 }
+
 #header .hidden-xs .navbar-nav > li > a{
-  font-family: titillium_webregular;
+  font-family: TitilliumWeb;
+  font-weight: 100;
 }
 
 .nav > li.nav_hidden{
@@ -143,7 +139,6 @@ a:hover{
   border-left:1px solid rgba(255,255,255,0.3);
   margin-top: 0.19rem;
   margin-left: 0.27rem;
-
 }
 
 #header .dropdown-menu{
@@ -156,9 +151,8 @@ a:hover{
   left: 0.26rem;
   padding: 0;
   margin: 0;
-
-
 }
+
 #header .dropdown-menu > li > a {
   color: #fff;
   opacity: 0.3;
@@ -166,7 +160,6 @@ a:hover{
   padding: 0px 30px;
   height: 0.47rem;
   line-height: 0.47rem;
-
 }
 
 #header .dropdown-menu > li:first-child{
@@ -194,7 +187,6 @@ img.btn_translate{
   margin-top: -2px;
 }
 
-
 .outBtn.navbar-nav > li > a > .nav_open_btn::before{
   content: " ";
   position: absolute;
@@ -205,15 +197,11 @@ img.btn_translate{
   height: 0.1111rem;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
-
 #header .hidden-xs .outBtn.navbar-nav > li > a {
-
   padding-right: 0.15rem;
   width: 1.02rem;
-
 }
 
 #header .btn-group { float: left}
@@ -224,7 +212,6 @@ img.btn_translate{
 }
 
 .outBtn.navbar-nav > li > a > .nav_open_btn i{
-
   background: url("../images/out_mid_icon.png");
   position: absolute;
   top: 0.3779rem;
@@ -232,8 +219,8 @@ img.btn_translate{
   width: 0.35rem;
   height: 0.0842rem;
   background-size:cover;
-
 }
+
 .outBtn.navbar-nav > li > a > .nav_open_btn::after{
   background: url("../images/out_down_icon.png");
   width: 0.35rem;
@@ -245,11 +232,9 @@ img.btn_translate{
   background-size:cover;
 }
 
-
 .nav.nav_open > li.nav_hidden{
   display: block;
 }
-
 
 .icon_git{
   background: url("../images/icon_git.png");
@@ -259,20 +244,18 @@ img.btn_translate{
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.08rem;
-
 }
 
 /* TiDB: */
 #header .logo span{
-
-  font-size: 0.28rem;
+  font-family: TitilliumWeb;
+  font-size: 0.26rem;
+  font-weight: normal;
+  letter-spacing: 2.6px;
   color: #FFFFFF;
-  letter-spacing: 2.5px;
-  vertical-align: middle;
   margin-left: 0.20rem;
-  font-weight: 300;
-  font-family: Helvetica Neue,Helvetica;
-
+  text-align: center;
+  vertical-align: sub;
 }
 
 #header a.logo:hover{
@@ -294,12 +277,14 @@ img.btn_translate{
   text-align: center;
   background: rgba(58,89,240,0.8);
   border-radius: 5px;
-  font-family:titillium_webbold;
+  font-family: TitilliumWeb;
+  font-weight: bold;
   font-size: 0.20rem;
   color: #fff;
   letter-spacing: 0.032rem;
   margin-bottom: 0.35rem;
 }
+
 .git_btn{
   border-radius: 5px;
   display: inline-block;
@@ -310,20 +295,25 @@ img.btn_translate{
   color: #7C7C9A;
   font-size: 0.2rem;
 }
+
 .footer li{
   list-style: none;
 }
+
 .footer ul{
   padding-top: 0.45rem;
 }
+
 .footer li a{
   color: #fff;
   font-size: 0.13rem;
   line-height: 0.36rem;
 }
+
 .footer .pingcap_logo{
   padding-top: 0.45rem;
 }
+
 .footer_record{
   padding-top: 1.22rem;
   font-size: 0.13rem;
@@ -343,18 +333,19 @@ img.btn_translate{
   border: none;
   height: 42px;
 }
+
 #submit .btn{
   padding: 7px 12px;
   background: #7a7d8b;
   color: #fff;
 }
+
 .subscribe_title{
   padding-top: 0.45rem;
   font-size: 0.13rem;
   line-height: 0.36rem;
   color: #fff;
 }
-
 
 .link_icon{
   display: inline-block;
@@ -363,11 +354,100 @@ img.btn_translate{
   background-repeat: no-repeat;
   margin-left: 10%;
 }
+
 .link_icon.twitter{
   background-image: url('../images/icon_twitter.png');
   width: 0.21rem;
   height: 0.17rem;
 }
+
+.link_icon.github{
+  background-image: url('../images/icon_github.png');
+  width: 0.20rem;
+  height: 0.19rem;
+}
+
+.link_icon.email{
+  background-image: url('../images/icon_email.png');
+  width: 0.22rem;
+  height: 0.14rem;
+}
+
+.link_icon.address{
+  background-image: url('../images/icon_address.png');
+  width: 0.19rem;
+  height: 0.17rem;
+}
+
+.footer_icon{
+  padding-top: 0.74rem;
+}
+
+.footer li{
+  list-style: none;
+}
+
+.footer ul{
+  padding-top: 0.45rem;
+}
+
+.footer li a{
+  color: #fff;
+  font-size: 0.13rem;
+  line-height: 0.36rem;
+}
+
+.footer .pingcap_logo{
+  padding-top: 0.45rem;
+}
+
+.footer_record{
+  padding-top: 1.22rem;
+  font-size: 0.13rem;
+  color: #A8A8A9;
+}
+
+.footer_mid{
+  border-right: 1px solid #383B3F;
+  border-left: 1px solid #383B3F;
+  padding-bottom: 1.22rem;
+  margin-bottom: 0.43rem;
+}
+
+#submit .form-control,#submit .btn{
+  box-shadow: none;
+  border-radius: inherit ;
+  border: none;
+  height: 42px;
+}
+
+#submit .btn{
+  padding: 7px 12px;
+  background: #7a7d8b;
+  color: #fff;
+}
+
+.subscribe_title{
+  padding-top: 0.45rem;
+  font-size: 0.13rem;
+  line-height: 0.36rem;
+  color: #fff;
+}
+
+.link_icon{
+  display: inline-block;
+  vertical-align: middle;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 10%;
+}
+
+.link_icon.twitter{
+  background-image: url('../images/icon_twitter.png');
+  width: 0.21rem;
+  height: 0.17rem;
+}
+
 .link_icon.github{
   background-image: url('../images/icon_github.png');
   width: 0.20rem;
@@ -390,91 +470,3 @@ img.btn_translate{
 .footer_icon{
   padding-top: 0.74rem;
 }
-
-
-
-
-
-.footer li{
-  list-style: none;
-}
-.footer ul{
-  padding-top: 0.45rem;
-}
-.footer li a{
-  color: #fff;
-  font-size: 0.13rem;
-  line-height: 0.36rem;
-}
-.footer .pingcap_logo{
-  padding-top: 0.45rem;
-}
-.footer_record{
-  padding-top: 1.22rem;
-  font-size: 0.13rem;
-  color: #A8A8A9;
-}
-
-.footer_mid{
-  border-right: 1px solid #383B3F;
-  border-left: 1px solid #383B3F;
-  padding-bottom: 1.22rem;
-  margin-bottom: 0.43rem;
-}
-
-#submit .form-control,#submit .btn{
-  box-shadow: none;
-  border-radius: inherit ;
-  border: none;
-  height: 42px;
-}
-#submit .btn{
-  padding: 7px 12px;
-  background: #7a7d8b;
-  color: #fff;
-}
-.subscribe_title{
-  padding-top: 0.45rem;
-  font-size: 0.13rem;
-  line-height: 0.36rem;
-  color: #fff;
-}
-
-
-.link_icon{
-  display: inline-block;
-  vertical-align: middle;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-left: 10%;
-}
-.link_icon.twitter{
-  background-image: url('../images/icon_twitter.png');
-  width: 0.21rem;
-  height: 0.17rem;
-}
-.link_icon.github{
-  background-image: url('../images/icon_github.png');
-  width: 0.20rem;
-  height: 0.19rem;
-}
-
-.link_icon.email{
-  background-image: url('../images/icon_email.png');
-  width: 0.22rem;
-  height: 0.14rem;
-}
-
-.link_icon.address{
-  background-image: url('../images/icon_address.png');
-  width: 0.19rem;
-  height: 0.17rem;
-
-}
-
-.footer_icon{
-  padding-top: 0.74rem;
-}
-
-
-

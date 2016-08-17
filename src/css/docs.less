@@ -1,6 +1,5 @@
 @import "./less/bootstrap.less";
-@import "./font/titilliumweb_regular.less";
-@import "./font/titilliumweb_regular_bold.less";
+@import "./font/titilliumweb.less";
 @import "./lib/animate.less";
 @import "./base/base";
 
@@ -28,7 +27,6 @@ body{
 #header .dropdown-menu{
   background: #202b75;
 }
-
 
 .st_tree{
   padding:10px;
@@ -72,14 +70,12 @@ body{
   background-size: contain;
 }
 
-
 .st_tree ul li.folder{
   background: none;
   padding-left: 0;
 }
 
 /* 展开的父节点 */
-
 .st_tree .open::before{
   content: " ";
   position: absolute;
@@ -100,6 +96,3 @@ body{
 .st_tree ul li.active a{
   color: #3A59F0;
 }
-
-
-

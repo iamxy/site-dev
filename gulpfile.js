@@ -30,17 +30,15 @@ var browser = os.platform() === 'linux' ? 'Google chrome' : (
   os.platform() === 'win32' ? 'chrome' : 'firefox'));
 var pkg = require('./package.json');
 
-//copy images to  dist
+//copy images to dist
 gulp.task('copy:images', function (done) {
     gulp.src(['src/images/**/*']).pipe(gulp.dest('dist/images')).on('end', done);
 });
 
 //copy typeface to  dist
 gulp.task('copy:font', function (done) {
-  gulp.src(['src/font/**/*']).pipe(gulp.dest('dist/font')).on('end', done);
+  gulp.src(['src/fonts/**/*']).pipe(gulp.dest('dist/fonts')).on('end', done);
 });
-
-
 
 //压缩css, css中既有自己写的.less, 也有引入第三方库的.css
 gulp.task('lessmin', function (done) {
@@ -57,7 +55,7 @@ gulp.task('lessmin', function (done) {
 //将js加上10位md5,并修改html中的引用路径，该动作依赖build-js
 gulp.task('md5:js', ['build-js'], function (done) {
     gulp.src('dist/js/*.js')
-        .pipe(md5(10, 'dist/app/*.html'))
+        .pipe(md5(10, 'dist/*.html'))
         .pipe(gulp.dest('dist/js'))
         .on('end', done);
 });
@@ -65,7 +63,7 @@ gulp.task('md5:js', ['build-js'], function (done) {
 //将css加上10位md5，并修改html中的引用路径，该动作依赖sprite
 gulp.task('md5:css', ['sprite'], function (done) {
     gulp.src('dist/css/*.css')
-        .pipe(md5(10, 'dist/app/*.html'))
+        .pipe(md5(10, 'dist/*.html'))
         .pipe(gulp.dest('dist/css'))
         .on('end', done);
 });
@@ -77,7 +75,7 @@ gulp.task('fileinclude', function (done) {
           prefix: '@@',
           basepath: '@file'
         }))
-        .pipe(gulp.dest('dist/app'))
+        .pipe(gulp.dest('dist'))
         .on('end', done);
         // .pipe(connect.reload())
 });
@@ -123,7 +121,7 @@ gulp.task('open', function (done) {
     gulp.src('')
         .pipe(gulpOpen({
             app: browser,
-            uri: 'http://localhost:3000/app'
+            uri: 'http://localhost:3000/'
         }))
         .on('end', done);
 });
@@ -144,8 +142,8 @@ gulp.task("build-js", ['fileinclude'], function(callback) {
 });
 
 //发布
-gulp.task('default', ['connect', 'fileinclude','copy:font', 'md5:css', 'md5:js', 'open']);
+gulp.task('default', ['fileinclude','copy:font', 'md5:css', 'md5:js', 'connect', 'open']);
 
 //开发
-gulp.task('dev', ['connect', 'copy:images','copy:font', 'fileinclude', 'lessmin', 'build-js', 'watch', 'open']);
+gulp.task('dev', ['copy:images','copy:font', 'fileinclude', 'lessmin', 'build-js', 'watch','connect', 'open']);
 
