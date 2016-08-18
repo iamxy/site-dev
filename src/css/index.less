@@ -1,23 +1,17 @@
-
 @import "./less/bootstrap.less";
-@import "./font/titilliumweb_regular.less";
-@import "./font/titilliumweb_regular_bold.less";
+@import "./font/titilliumweb.less";
 @import "./lib/animate.less";
 @import "./base/base";
 
-
 .ping_illustrations h3{
-  font-family: lato;
+  font-family: Lato;
 }
 
 @media (min-width: 1300px) {
   .container {
     width: 1250px;
   }
-
-
 }
-
 
 #draw_fixed{
   position: fixed;
@@ -27,66 +21,68 @@
 
 .container.draw_fixed{
   background: url("../images/draw_head.png") center center no-repeat;
-  height: 10rem;
-
   height: 10.30rem;
   margin: 0 auto;
   background-size: contain;
 }
+
 .container.draw_fixed{
   text-align: center;
   color: #fff;
   padding-top: 1.65rem;
 }
-.container.draw_fixed h1{
-  font-size: 0.72rem;
 
-  font-weight: normal;
+.container.draw_fixed h1{
+  font-family: TitilliumWeb;
+  font-size: 0.72rem;
+  font-weight: bold;
   padding: 0;
   margin: 0;
-  line-height: 0.72rem;
+  line-height: 1;
+  letter-spacing: 0.052rem;
 }
+
 .container.draw_fixed h2{
+  font-family: TitilliumWeb;
   font-size: 0.20rem;
+  font-weight: 200;
   padding: 0;
   margin: 0;
-  line-height: 0.44rem;
+  line-height: 2.2;
+  letter-spacing: 0.03rem;
 }
+
 .container.draw_fixed .ping_detail{
   line-height: 0.32rem;
   padding-top: 0.43rem;
   font-size: 0.16rem;
 }
 
-
 .nav > li > a:hover, .nav > li > a:focus{
   background: inherit;
 }
-
 
 .ping_bent_context{
   padding-top: 0.48rem;
 }
 
-
 .ping_fixed_box{
   background: url("../images/line_body_bg.png")  left top repeat-x;
   height: 800px;
 }
+
 .ping_content{
   padding-top: 3rem;
-
-  background: url("../images/line_bg.png") center top  no-repeat;
-
+  background: url("../images/line_bg.png") center top no-repeat;
 }
+
 .ping_content .row{
   padding-bottom: 0.5rem;
 }
+
 .ping_box{
-  background: url("../images/ping_bg.png") center 862px  no-repeat;
-
+  background: url("../images/ping_bg.png") center 862px no-repeat;
 }
-
 
 .ping_content{
   color: #fff;
@@ -96,15 +92,14 @@
   padding-left: 1.06rem;
   position: relative;
 }
-.ping_list h3{
 
+.ping_list h3{
   font-size: 0.3rem;
   line-height: 0.6rem;
   white-space: nowrap;
   letter-spacing: 4.4px;
   overflow: hidden;
   font-weight: 300;
-
 }
 
 .ping_list > p{
@@ -128,14 +123,17 @@
   background-image: url("../images/icon_full.png");
   height: 0.69rem;
 }
+
 .btn_graphic.hours{
   background-image: url("../images/icon_hours.png");
   height: 0.75rem;
 }
+
 .btn_graphic.online{
   background-image: url("../images/icon_online.png");
   height: 0.69rem;
 }
+
 .btn_graphic.distributed{
   background-image: url("../images/icon_distributed.png");
   height: 0.64rem;
@@ -145,6 +143,7 @@
   background-image: url("../images/icon_self.png");
   height: 0.75rem;
 }
+
 .ping_illustrations{
   padding-top: 4.33rem;
 }
@@ -153,8 +152,8 @@
   padding: 0;
   margin: 0;
   font-size: 0.38rem;
-
 }
+
 .ping_illustrations h3{
   padding: 0;
   margin: 0;
@@ -164,7 +163,8 @@
   padding-bottom: 30px;
   padding-top: 0.06rem;
 }
-.ping_illustrations  p{
+
+.ping_illustrations p{
   font-size: 0.16rem;
   line-height: 0.32rem;
 }
@@ -174,7 +174,6 @@
 }
 
 .ping_illustrations_STRONG{
-
   padding-left: 18px;
 }
 
@@ -191,17 +190,17 @@
 .responsive_strong .ping_illustrations_STRONG{
   padding-top: 2.38rem;
 }
+
 body{
   background: #0c0c0c url("../images/bottom.png") center bottom no-repeat;
-
 }
 
 .ping_footer_bg_draw{
   background: url("../images/back.png") center top no-repeat;
   height: 519px;
 }
-@media (min-width: 1250px) {
 
+@media (min-width: 1250px) {
   .responsive_horizontal{
     position: relative;
     top: -0.40rem;
@@ -213,7 +212,6 @@ body{
   .responsive_img_part_3{
     max-width: 6.22rem;
   }
-
   .responsive_strong{
     margin-left: -0.27rem;
     margin-top: -0.43rem;
@@ -221,20 +219,15 @@ body{
   .tidb_respsonsive_m{
     margin-left: -0.84rem;
   }
-
   .responsive_high{
     left: 0.87rem;
     position: relative;
     top: -0.30rem;
   }
-
-
-
 }
 
 @media(max-width: 1440px) {
   .draw_fixed{
-
     transform:scale(0.9);
     -ms-transform:scale(0.9); 	/* IE 9 */
     -moz-transform:scale(0.9); 	/* Firefox */
@@ -247,13 +240,10 @@ body{
     -webkit-transform-origin:  50% 0 0 ;
     -o-transform-origin:  50% 0 0 ;
   }
-
 }
 
 @media(max-width: 1366px) {
   .draw_fixed{
-
-
     transform:scale(0.6);
     -ms-transform:scale(0.6); 	/* IE 9 */
     -moz-transform:scale(0.6); 	/* Firefox */
@@ -267,7 +257,6 @@ body{
     -o-transform-origin:  50% 0 0 ;
   }
 }
-
 
 @media(max-width: 970px) {
   .draw_fixed{
