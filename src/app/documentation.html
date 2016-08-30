@@ -3,12 +3,39 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
-    <link href="../css/docs.min.css"  rel="stylesheet">
+    <link href="../less/docs.min.css" rel="stylesheet">
     <title>DOCUMENTATION</title>
 </head>
 
 <body>
-    @@include('./header.html',{"docs":"active"})
+    <div id="header" role="navigation" class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="toggle-icon-top"></span>
+                    <span class="toggle-icon-middle"></span>
+                    <span class="toggle-icon-bottom"></span>
+                </button>
+                <div class="navbar-brand">
+                    <a href="/" class="logo">
+                        <img src="images/logo.png" alt="TiDB by PingCAP" width="41px" height="43px">TiDB
+                    </a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="btn-links nav navbar-nav navbar-right">
+                    <li>
+                        <a class="hbtn" href="#">GET STARTED</a>
+                    </li>
+                </ul>
+                <ul class="main-links nav navbar-nav navbar-right">
+                    <li class="@@docs"><a href="documentation.html">DOCS</a></li>
+                    <li class="@@blog"><a href="blog.html">BLOG</a></li>
+                    <li class="@@about"><a href="about.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="documentation">
         <div class="container">
             <div class="row">

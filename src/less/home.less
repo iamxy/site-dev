@@ -1,0 +1,121 @@
+body.home {
+  background: #0c0c0c;
+
+  .template-slogan-mask {
+    height: 1100px;
+    background: url("../images/line_body_bg.png") left top repeat-x;
+  }
+
+  .template-slogan {
+    padding-top: 130px;
+
+    .template-slogan-content {
+      height: 900px;
+      background: url("../images/draw_head.png") no-repeat center center;
+      display: flex;
+      justify-content: center;
+      padding-top: 110px;
+
+      .template-headline {
+        width: 660px;
+        margin: 0 auto;
+        text-align: center;
+
+        h1 {
+          font-family: TitilliumWeb, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 68px;
+          font-weight: 600;
+          padding: 0;
+          margin: 0;
+          line-height: 1;
+          letter-spacing: 5.2px;
+        }
+
+        h2 {
+          font-family: TitilliumWeb, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 18px;
+          font-weight: 100;
+          padding: 0;
+          margin: 0;
+          line-height: 2.6;
+          letter-spacing: 3.4px;
+        }
+
+        .description {
+          margin-top: 46px;
+          font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 16px;
+          font-weight: 100;
+          line-height: 2;
+          letter-spacing: 1px;
+          color: #ced1d6;
+        }
+      }
+    }
+  }
+
+  .get-started {
+    .btn-lg {
+      width: 200px;
+      height: 54px;
+      border-radius: 5px;
+      font-family: TitilliumWeb, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 35px;
+      letter-spacing: 3px;
+      transition: all 300ms ease;
+
+      &:hover, &:focus {
+        transition: all 300ms ease-in;
+      }
+    }
+
+    .btn-primary {
+      margin-top: 59px;
+      background: rgba(58, 89, 240, 0.8);
+      border: none;
+
+      &:hover, &:focus {
+        background: rgba(35, 52, 138, 1);
+      }
+    }
+
+    .btn-github {
+      margin-top: 39px;
+      color: #fff;
+      border: 1px solid #7c7c9a;
+
+      &:hover, &:focus {
+        border: 1px solid #fff;
+      }
+    }
+  }
+
+  .icon-github {
+    background: url("../images/icon_github.png");
+    width: 20px;
+    height: 19px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: sub;
+    margin-right: 8px;
+  }
+
+  .slogan-mask {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .slogan {
+    //position: fixed;
+    z-index: 1;
+    color: #fff;
+    width: 100%;
+
+    .slogan-content {
+      position: relative;
+    }
+  }
+}

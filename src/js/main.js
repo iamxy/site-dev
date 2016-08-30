@@ -55,12 +55,7 @@ $(function(){
 });
 
 
-
-
-
 $(function () {
-
-
   $(".st_tree").SimpleTree({
 
     /* 可无视代码部分*/
@@ -70,7 +65,6 @@ $(function () {
     }
 
   });
-
 
 
   var oFixed  = $('#draw_fixed');
@@ -126,7 +120,5 @@ $(function () {
   $('#group').on('click',function () {
     $(this).toggleClass('open');
   });
-
-
 
 });

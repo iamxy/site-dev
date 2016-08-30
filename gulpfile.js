@@ -41,7 +41,7 @@ gulp.task('copy:font', function (done) {
 
 //压缩css, css中既有自己写的.less, 也有引入第三方库的.css
 gulp.task('lessmin', function (done) {
-    gulp.src(['src/css/*.less'])
+    gulp.src(['src/less/base.less'])
         .pipe(less())
         //这里可以加css sprite 让每一个css合并为一个雪碧图
         //.pipe(spriter({}))
@@ -126,7 +126,6 @@ gulp.task('open', function (done) {
 });
 
 var myDevConfig = Object.create(webpackConfig);
-
 var devCompiler = webpack(myDevConfig);
 
 //引用webpack对js进行操作
