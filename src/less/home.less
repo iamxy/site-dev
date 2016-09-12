@@ -1,56 +1,69 @@
 body.home {
   background: #0c0c0c;
 
+  .inner-page {
+    overflow: hidden;
+  }
+
+  .sub-site-wrap {
+    overflow: visible;
+    position: relative;
+    z-index: 100;
+  }
+
   .template-slogan-mask {
-    height: 1100px;
     background: url("../images/line_body_bg.png") left top repeat-x;
   }
 
   .template-slogan {
-    padding-top: 130px;
-
     .template-slogan-content {
       height: 900px;
       background: url("../images/draw_head.png") no-repeat center center;
       display: flex;
       justify-content: center;
       padding-top: 110px;
+    }
+  }
 
-      .template-headline {
-        width: 660px;
-        margin: 0 auto;
-        text-align: center;
+  @media (min-width: 768px) {
+    .template-slogan {
+      padding-top: 82px;
+    }
+  }
 
-        h1 {
-          font-family: TitilliumWeb, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 68px;
-          font-weight: 600;
-          padding: 0;
-          margin: 0;
-          line-height: 1;
-          letter-spacing: 5.2px;
-        }
+  .template-headline {
+    width: 660px;
+    margin: 0 auto;
+    text-align: center;
 
-        h2 {
-          font-family: TitilliumWeb, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 18px;
-          font-weight: 100;
-          padding: 0;
-          margin: 0;
-          line-height: 2.6;
-          letter-spacing: 3.4px;
-        }
+    h1 {
+      font-family: TitilliumWeb, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 71px;
+      font-weight: 800;
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+      letter-spacing: 5.2px;
+    }
 
-        .description {
-          margin-top: 46px;
-          font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
-          font-size: 16px;
-          font-weight: 100;
-          line-height: 2;
-          letter-spacing: 1px;
-          color: #ced1d6;
-        }
-      }
+    h2 {
+      font-family: TitilliumWeb, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 19px;
+      font-weight: 200;
+      padding: 0;
+      margin: 0;
+      line-height: 2.6;
+      letter-spacing: 3.3px;
+    }
+
+    .description {
+      margin-top: 42px;
+      font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 200;
+      line-height: 2;
+      letter-spacing: 1px;
+      color: #ced1d6;
     }
   }
 
@@ -61,7 +74,7 @@ body.home {
       border-radius: 5px;
       font-family: TitilliumWeb, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 15px;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 35px;
       letter-spacing: 3px;
       transition: all 300ms ease;
@@ -109,13 +122,85 @@ body.home {
   }
 
   .slogan {
-    //position: fixed;
     z-index: 1;
     color: #fff;
     width: 100%;
 
     .slogan-content {
       position: relative;
+    }
+  }
+
+  #tidb-features {
+    margin-top: -200px;
+    min-height: 1270px;
+    background: url("../images/features_back.png") center top no-repeat;
+
+    .container {
+      padding-top: 300px;
+    }
+  }
+
+  .feature-list {
+    padding-left: 106px;
+    position: relative;
+
+    .btn-graphic{
+      display: inline-block;
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      left: 0;
+
+      &.open-source {
+        background: url("../images/icon_open.png") center center no-repeat;
+        background-size: 58px 52px;
+      }
+
+      &.sql {
+        background: url("../images/icon_full.png") center center no-repeat;
+        background-size: 69px 53px;
+      }
+
+      &.availibility {
+        background: url("../images/icon_hours.png") center center no-repeat;
+        background-size: 60px 60px;
+      }
+
+      &.ddl {
+        background: url("../images/icon_online.png") center center no-repeat;
+        background-size: 56px 49px;
+      }
+
+      &.transaction {
+        background: url("../images/icon_distributed.png") center center no-repeat;
+        background-size: 63px 44px;
+      }
+
+      &.healing {
+        background: url("../images/icon_self.png") center center no-repeat;
+        background-size: 58px 53px;
+      }
+    }
+
+    h3 {
+      font-family: TitilliumWeb, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 29px;
+      font-weight: 400;
+      line-height: 1.9;
+      letter-spacing: 4px;
+      color: #fff;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    p {
+      font-family: Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 200;
+      line-height: 2;
+      letter-spacing: 1px;
+      color: #ced1d6;
     }
   }
 }
